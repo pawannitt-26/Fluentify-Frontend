@@ -1,4 +1,4 @@
-# LinguaConnect by Team TRINITY
+# LingQ
 
 ## Objective
 
