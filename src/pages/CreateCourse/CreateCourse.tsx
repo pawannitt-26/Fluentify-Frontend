@@ -171,22 +171,22 @@ const CreateCourse = () => {
           </div>
         </div>
       </Modal>
-      <div className="w-full h-[50%] flex flex-row justify-between ">
+      <div className="w-full h-[60%] flex flex-row justify-between ">
         <div
-          className=" w-[48%] h-full flex flex-col text-3xl gap-2 font-medium p-6"
+          className=" w-[48%] h-full flex flex-col text-3xl gap-1  font-medium p-6"
           style={{ boxShadow: '0px 10px 30px rgba(0, 0, 0, 0.08)' }}
         >
           <input
             type="text"
-            className="border-b-[2px] py-2 font-merium  border-gray-300 outline-0"
+            className="border-b-[2px] font-merium  border-gray-300 outline-0"
             placeholder="Enter Course Name"
             onChange={(e) => setCourseName(e.target.value)}
           />
-          <div className="w-full flex mt-3 justify-between gap-5">
+          <div className="w-full flex  justify-between gap-5">
             {' '}
             <p className="font-bold text-lg text-customBlue">Description: </p>
             <textarea
-              className="text-[#2e2e2e] rounded-lg w-full border-[3px] font-medium text-lg h-[80px]"
+              className="text-[#2e2e2e] rounded-lg w-full border-[3px] font-medium text-lg h-[60px]"
               defaultValue={description}
               onChange={(e) => {
                 setDescription(e.target.value);

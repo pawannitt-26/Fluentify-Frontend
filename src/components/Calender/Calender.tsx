@@ -223,7 +223,7 @@ const Calender: FC<CalenderProps> = ({
               return (
                 <div
                   key={index}
-                  className="h-[45px] text-[18px]  flex justify-center items-center"
+                  className="h-[36px] text-[17px]  flex justify-center items-center"
                 >
                   {day}
                 </div>
@@ -236,15 +236,15 @@ const Calender: FC<CalenderProps> = ({
               return (
                 <div
                   key={index}
-                  className={`h-[45px] text-[18px]  flex gap-2 pl-2 pr-2 overflow-x-scroll items-center`}
+                  className={`h-[36px] text-[16px]  flex gap-2 pl-2 pr-2 overflow-x-scroll items-center`}
                 >
                   {calenderSchedule[dayKey].length > 0 ? (
-                    calenderSchedule[dayKey].map((slot, index) => {
+                    calenderSchedule[dayKey].map((slot: (string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | null | undefined)[], index: React.Key | null | undefined) => {
                       return (
                         <div className="rounded bg-customBlue min-w-[120px] text-white p-1 text-[14px] text-center">
                           <span
                             key={index}
-                            className="text-[14px] font-semibold"
+                            className="text-[12px] font-semibold"
                           >
                             {slot[0]} - {slot[1]}
                           </span>

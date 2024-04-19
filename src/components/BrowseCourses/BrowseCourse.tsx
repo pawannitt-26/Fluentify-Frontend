@@ -3,15 +3,15 @@ import Search from '../../assets/search.png';
 import CourseCard from '../CourseCard/CourseCard';
 import axios from 'axios';
 
-interface BrowseCourseProps {}
+interface BrowseCourseProps { }
 
-const BrowseCourse: FC<BrowseCourseProps> = ({}) => {
+const BrowseCourse: FC<BrowseCourseProps> = ({ }) => {
   const [courses, setCourses] = useState([]);
   useEffect(() => {
     axios
       .get('http://localhost:3000/api/courses', {
         withCredentials: true,
-      
+
       })
       .then((response) => {
         // Handle the response data here
@@ -46,14 +46,6 @@ const BrowseCourse: FC<BrowseCourseProps> = ({}) => {
           {courses.map((course) => {
             return <CourseCard course={course} />;
           })}
-          {/* <CourseCard />
-          <CourseCard />
-          <CourseCard />
-          <CourseCard />
-          <CourseCard />
-          <CourseCard />
-          <CourseCard />
-          <CourseCard /> */}
         </div>
       </div>
     </div>

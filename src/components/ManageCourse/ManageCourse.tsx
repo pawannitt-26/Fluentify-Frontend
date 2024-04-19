@@ -117,7 +117,7 @@ const Courses = () => {
   };
   return (
     <div className="h-full w-full p-10 flex flex-col gap-5 ">
-      <div className="w-full h-[50%] flex flex-row justify-between ">
+      <div className="w-full h-[60%] flex flex-row justify-between ">
         <div
           className=" w-[48%] h-full flex flex-col text-3xl gap-5 font-semibold p-6"
           style={{ boxShadow: '0px 10px 30px rgba(0, 0, 0, 0.08)' }}
