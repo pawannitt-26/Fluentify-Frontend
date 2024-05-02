@@ -59,8 +59,8 @@ export const Navbar = () => {
           className="h-[100px] min-h-[100px] w-[100%] bg-[#ffffff] shadow-xl px-10 flex justify-between items-center z-10"
           style={{ boxShadow: '0px 8px 50px rgba(0, 0, 0, 0.05)' }}
         >
-          <h1 className="font-extrabold text-2xl text-[#7272f1]">
-            LINGUACONNECT
+          <h1 className="font-extrabold text-4xl text-[#7272f1]">
+            Fluentify
           </h1>
           <div className="flex flex-row items-center gap-[20%]">
             <img
@@ -165,8 +165,8 @@ export const Navbar = () => {
           className="h-[100px] w-[100%] bg-[#ffffff] shadow-xl px-10 flex justify-between items-center z-10 min-h-[100px]"
           style={{ boxShadow: '0px 8px 50px rgba(0, 0, 0, 0.05)' }}
         >
-          <h1 className="font-extrabold text-2xl text-[#7272f1]">
-            LINGUACONNECT
+          <h1 className="font-extrabold text-4xl text-[#7272f1]">
+            Fluentify
           </h1>
 
           <UserAvatar />
